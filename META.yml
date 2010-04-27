@@ -8,6 +8,7 @@ build_requires:
   SDL: 2.404
 configure_requires:
   Alien::SDL: 1.3
+  ExtUtils::CBuilder: 0
   Module::Build: 0.36
   SDL: 2.404
 generated_by: 'Module::Build version 0.3603'
@@ -19,10 +20,10 @@ name: SDLx-TTF
 provides:
   SDLx::TTF:
     file: lib/SDLx/TTF.pm
-    version: 0.002
+    version: 0.003
 requires:
   Alien::SDL: 1.3
   SDL: 2.404
 resources:
   license: http://dev.perl.org/licenses/
-version: 0.002
+version: 0.003

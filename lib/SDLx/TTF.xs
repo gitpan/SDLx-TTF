@@ -37,6 +37,7 @@
 #endif
 
 #include <SDL/SDL.h>
+#include <SDL/SDL_image.h>
 #include <string.h>
 #include <stdlib.h>
 
@@ -46,7 +47,6 @@
 
 #include "SFont.h"
 
-#include <SDL/SDL_image.h>
 
 SFont_FontInfo InternalFont;
 Uint32 SFont_GetPixel(SDL_Surface *Surface, Sint32 X, Sint32 Y)
@@ -278,9 +278,10 @@ new ( CLASS, filename )
 		RETVAL
 
 void
-UseFont ( surface )
+use ( surface )
 	SDL_Surface *surface
 	CODE:
+		
 		SFont_InitFont(surface);
 
 void
